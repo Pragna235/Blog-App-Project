@@ -1,1 +1,2 @@
-# Blog-App-Project
+# Full Stack Project - Blog Application
+
