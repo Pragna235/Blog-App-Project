@@ -5,3 +5,7 @@
 *     npm install express
 *     npm i mongodb
 *     npm i bcryptjs
+
+## References
+
+* `jwt.io`
