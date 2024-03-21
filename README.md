@@ -1,6 +1,6 @@
 # Full Stack Project - Blog Application
 
-## Modules to be installed
+## Modules to be installed - Backend
 
 *     npm install express
 *     npm i mongodb
