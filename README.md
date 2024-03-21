@@ -5,6 +5,7 @@
 *     npm install express
 *     npm i mongodb
 *     npm i bcryptjs
+*     npm install jsonwebtoken
 
 ## References
 
