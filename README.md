@@ -34,3 +34,4 @@
 `Note` : Check both the `localhost:3000` and `localhost:4000`
 
 * Frontend - `npm i axios`
+* Run the `npm run build` everytime you make changes in frontend
