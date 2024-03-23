@@ -29,3 +29,6 @@
 * Split the terminal where `frontend` is opened in one, and `backend` is opened in the other
 * In the frontend react app type the following command
 *     npm run build
+* In the backend type the following command
+*     node --watch server.js
+`Note` : Check both the `localhost:3000` and `localhost:4000`
