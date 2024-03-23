@@ -38,4 +38,4 @@
 
 `Observation` : Put the `import bootstrap/...` line at the beginning of the `index.css` file. Then only the `Google Font` is reflected in the output.
 
-* `Ctrl + i` . `Application` > `Storage` > `Session Storage`
+* `Ctrl + i` . `Application` > `Storage` > `Session Storage` --> For Token Storage
