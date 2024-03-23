@@ -35,3 +35,5 @@
 
 * Frontend - `npm i axios`
 * Run the `npm run build` everytime you make changes in frontend
+
+`Observation` : Put the `import bootstrap/...` line at the beginning of the `index.css` file. Then only the `Google Font` is reflected in the output.
