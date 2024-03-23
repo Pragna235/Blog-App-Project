@@ -32,3 +32,5 @@
 * In the backend type the following command
 *     node --watch server.js
 `Note` : Check both the `localhost:3000` and `localhost:4000`
+
+* Frontend - `npm i axios`
