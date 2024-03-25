@@ -1,5 +1,8 @@
 # Full Stack Project - Blog Application
 
+### Project Files - https://github.com/Pragna235/Blog-App-Project/tree/master
+### Live Project (partial) - 
+
 ## Modules to be installed - Backend
 
 *     npm install express
