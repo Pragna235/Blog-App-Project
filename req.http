@@ -1,0 +1,108 @@
+//----------------------author-api routes--------------------------------------
+### POST for author-api --> author registration
+
+post http://localhost:4000/author-api/register
+Content-Type: application/json
+
+{
+    "role":"author",
+    "username":"H. D. Carlton",
+    "password":"Haunting Adeline",
+    "email":"carlton@adeline.com"
+}
+
+### author login
+
+post http://localhost:4000/author-api/login
+Content-Type: application/json
+
+{
+    "role":"author",
+    "username":"H. D. Carlton",
+    "password":"Haunting Adeline"
+    
+}
+
+### add article by author
+
+post http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "articleId":"{{$timestamp}}",
+    "title":"JavaScript basics",
+    "category":"programming",
+    "content":"JS is a programming language and this is a second article",
+    "dateOfCreation":"{{$datetime iso8601}}",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "username":"Pragna",
+    "comments":[],
+    "status":true
+}
+
+### read own article by author
+get http://localhost:4000/author-api/articles/Pragna
+
+### delete an article by author
+put http://localhost:4000/author-api/articles/John Green/1711000458
+Content-Type: application/json
+
+{
+    "status":true
+}
+
+//status : true for restore and false for delete
+
+### edit article by author
+put http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "articleId":"1711000458",
+    "title":"JavaScript basics part-1",
+    "category":"web development",
+    "content":"JS is a programming language and this is an editted article",
+    "dateOfCreation":"2024-03-21T05:54:18.063Z",
+    "dateOfModification":"{{$datetime iso8601}}",
+    "username":"John Green",
+    "comments":[],
+    "status":true
+}
+
+
+//-------------------------user-api routes------------------------------------
+### POST for user-api --> user registration
+
+post http://localhost:4000/user-api/register
+Content-Type: application/json
+
+{
+    "role":"user",
+    "username":"kgf_2",
+    "password":"rocky",
+    "email":"rocky@bhai.com"
+}
+
+### user login
+post http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "role":"user",
+    "username":"theicebreaker_23",
+    "password":"password"
+    
+}
+
+### get all articles by user --> Bearer -> User JWT, get the token after from the response of user login
+get http://localhost:4000/user-api/articles
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6eyJfaWQiOiI2NWZiYjQyNDBhNWNjNGVhNGZkOTMxZmUiLCJyb2xlIjoidXNlciIsInVzZXJuYW1lIjoidGhlaWNlYnJlYWtlcl8yMyIsInBhc3N3b3JkIjoiJDJhJDA2JHJNRVE3YU5TSkJCTjRIWFFDanU5enVZQ2dOLlFSaGFCOHhVM1RDWGEyM05qemFQL3F5WlZlIiwiZW1haWwiOiJ2djczQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MTEwMTY0ODMsImV4cCI6MTcxMTAxNjc4M30.fc-Gkg-DvgyNOXcGT-vIBylXsPB1etH6Dcb8PEwbqLs
+
+### add comment by user
+put http://localhost:4000/user-api/article/1711000458/comment
+Content-Type: application/json
+
+{
+    "username":"kgf_2",
+    "comment":"Rocking!!!"
+}
