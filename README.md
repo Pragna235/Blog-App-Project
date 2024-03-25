@@ -1,7 +1,7 @@
 # Full Stack Project - Blog Application
 
 ### Project Files - https://github.com/Pragna235/Blog-App-Project/tree/master
-### Live Project (partial) - 
+### Live Project (partial) - https://open-it-locally-to-access-database.netlify.app/
 
 ## Modules to be installed - Backend
 
